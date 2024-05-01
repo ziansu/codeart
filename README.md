@@ -46,7 +46,11 @@ In this example, we will reproduce one experiment reported Table 1 in the paper.
 
 5. You may see the actual command executed in the terminal.
 
+## Notes
+
 If the reviewer notices “Error” in the output block, please refresh the webpage. If the error persists, please restart the server program.
+
+Please run one experiment at a time.
 
 ## Figure 8
 
