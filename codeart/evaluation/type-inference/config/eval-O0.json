@@ -1,0 +1,46 @@
+{
+    "model_name_or_path": "../../checkpoints/codeart-26m-ti-O0",
+    "dataset_name": "PurCL/marinda-type-inference-debuginfo-only-O0-shuffle",
+    "output_dir": "../save/codeart-ti-O0",
+    
+    "masking_enable_global_memory_patterns": true,
+    "masking_enable_bridge_patterns": false,
+    "masking_enable_graph_patterns": true,
+    "masking_enable_local_patterns": true,
+    "with_transitive_closure": true,
+
+    "position_embedding_type": "mixed",
+    "max_relative_position_embeddings": 8,
+    "max_seq_length": 512,
+
+    "seed": 42,
+
+    "label_file": "labels.json",
+
+    "use_auth_token": true,
+    "dataloader_num_workers": 2,
+    "remove_unused_columns": false,
+
+    "do_predict": true,
+
+    "per_device_train_batch_size": 48,
+    "gradient_accumulation_steps": 2,
+    "per_device_eval_batch_size": 128,
+
+    "num_train_epochs": 5,
+    "learning_rate": 5e-5,
+    "evaluation_strategy": "steps",
+    "eval_steps": 10,
+    "save_steps": 100,
+    "logging_steps": 2,
+
+    "report_to": "tensorboard",
+    "cache_dir": "../save/.cache",
+
+    "save_total_limit": 10,
+    "load_best_model_at_end": true,
+    "metric_for_best_model": "eval_f1",
+
+    "overwrite_output_dir": true,
+    "no_cuda": false
+}

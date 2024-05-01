@@ -1,0 +1,51 @@
+{
+    "dataset_name": "PurCL/bincorp-26m-all",
+    "run_name": "codeart",
+    "output_dir": "../save/codeart", 
+
+
+    "masking_enable_global_memory_patterns": true,
+    "masking_enable_bridge_patterns": false,
+    "masking_enable_graph_patterns": true,
+    "masking_enable_local_patterns": true,
+    "with_transitive_closure": true,
+
+
+    "position_embedding_type": "mixed",
+    "max_relative_position_embeddings": 8,
+    "ep_add_linear_projection": true,
+    "max_seq_length": 512,
+    "mlm_probability": 0.15,
+    "ep_probability": 0.4,
+    
+
+    "use_auth_token": true,
+    "dataloader_num_workers": 2,
+    "remove_unused_columns": false,
+    "do_train": true,
+    "do_eval": true,
+
+
+    "per_device_train_batch_size": 64,
+    "gradient_accumulation_steps": 2,
+    "per_device_eval_batch_size": 256,
+
+
+    "num_train_epochs": 20,
+    "learning_rate": 5e-4,
+    "warmup_steps": 10000,
+    "weight_decay": 0.01,
+    "evaluation_strategy": "steps",
+    "eval_steps": 100,
+    "save_steps": 1000,
+    "logging_steps": 10,
+
+
+    "report_to": "wandb",
+    "cache_dir": "../save/.cache",
+    
+
+    "overwrite_output_dir": true,
+    "torch_compile": true,
+    "fp16": true
+}
