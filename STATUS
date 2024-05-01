@@ -10,6 +10,7 @@ Below are the reasons for applying for the badges:
 
 1. Available: We provide a runnable docker image that contains the code and the links to the datasets. This docker image can be used to run CodeArt.
 
-2. Functional: In addtion to the code and docker image, we provide a `README-docker.md` file that contains the instructions to run the docker image and reproduce the results of the paper.
+2. Functional: In addtion to the code and docker image, we provide a `README-docker.md` file that contains the instructions to run the docker image and reproduce the results of the paper. We also integrate the experiments into a frontend web interface, which allows users to interact run the experiments and see the results with a few clicks.
 
-3. Reusable: We provide a docker image that can be used to run CodeArt. The docker image contains the code and the datasets. The docker image can be used to reproduce the results of the paper.
+3. Reusable: The code is well-structured and documented with launching scripts and configuration files. The code can be easily reused to run on other datasets or to test other models. In addition, the frontend web interface by itself is a reusable tool that can be used to run experiments on other models and datasets, but for simplicity and to avoid confusion, we only allow running the experiments for the models and datasets used in the paper.
+
