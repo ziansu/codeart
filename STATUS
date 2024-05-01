@@ -1,0 +1,15 @@
+CodeArt is applying for the following badges:
+
+1. Available. 
+
+2. Functional
+
+3. Reusable
+
+Below are the reasons for applying for the badges:
+
+1. Available: We provide a runnable docker image that contains the code and the links to the datasets. This docker image can be used to run CodeArt.
+
+2. Functional: In addtion to the code and docker image, we provide a `README-docker.md` file that contains the instructions to run the docker image and reproduce the results of the paper.
+
+3. Reusable: We provide a docker image that can be used to run CodeArt. The docker image contains the code and the datasets. The docker image can be used to reproduce the results of the paper.

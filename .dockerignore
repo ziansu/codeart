@@ -2,3 +2,5 @@
 .save/
 convert.ipynb
 *.npy
+
+__pycache__

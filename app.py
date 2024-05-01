@@ -340,4 +340,4 @@ with gr.Blocks() as demo:
 
 
 if __name__ == "__main__":
-    demo.launch(server_port=47907, share=True)
+    demo.launch(server_port=47906, share=True)

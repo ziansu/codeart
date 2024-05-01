@@ -1,0 +1,3 @@
+Docker 1.33GB, to produce all, 30GB of disk space is recommended.
+
+A GPU is highly recommended. Our reproduction is tested on A6000 48GB.
