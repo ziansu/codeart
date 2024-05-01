@@ -1,3 +1,16 @@
-Docker 1.33GB, to produce all, 30GB of disk space is recommended.
+===Artifact Evaluation===
 
-A GPU is highly recommended. Our reproduction is tested on A6000 48GB.
+For the artifact evaluation, CodeArt requires `docker` installation.
+We provide a runnable docker image for the artifact evaluation.
+
+We recommend using a machine with at least 64GB of RAM and 8 CPU cores.
+We also recommend using a machine with an Nvidia GPU having at least 24 GB VRAM.
+Our reproduction is tested on A6000 48GB.
+
+Most of the experiments should work fine on a machine with 32GB of RAM and 16GB VRAM.
+
+Running all experiments may require up to 100GB of disk space.
+This is because CodeArt checkpoints and datasetsare hosted on Hugging Face and requires downloading them.
+
+The space usage can be reduced with minor engineering efforts.
+We will improve it in the future.
