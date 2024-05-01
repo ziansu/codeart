@@ -20,7 +20,7 @@ docker pull sheepy928/codeart:v1-release
 After pulling the image, please run the container with the following command.
 `-it` means the container is interactive.
 ```bash
-docker run -it -p 47906:47906 codeart
+docker run -it -p 47906:47906 sheepy928/codeart
 ```
 The following message will be shown if the container is successfully started. Note that the public URL will be different each time, and each is valid for 72 hours or until the container is stopped. You can access our demo through either the local URL or the public URL.
 ```
