@@ -6,6 +6,4 @@ Zian Su, Xiangzhe Xu, Ziyang Huang, Zhuo Zhang, Yapeng Ye, Jianjun Huang, Xiangy
 
 ---
 
-Instructions for reproducing the work can be found in `README-docker.md`.
-
-> We are in process of cleaning up the code. Please stay tuned.
+Check the `artifact` branch for reproducible artifact.
