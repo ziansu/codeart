@@ -105,7 +105,6 @@ def parse_die(die):
             else:
                 all_type_list_pretty = all_type_list
 
-            
             # for entry in all_type_list_pretty:
             #     print(
             #         "%s, %s, [%x, %x), %s"
@@ -152,18 +151,18 @@ def main():
         types_all.extend(type_info)
         types_all_pretty.extend(type_info_pretty)
 
-    if args.fout == '':
+    if args.fout == "":
         args.fout = args.fin + ".type_info.jsonl"
     with open(args.fout, "w") as fout:
         for info in types_all_pretty:
             if info[1] is None:
                 continue
             entry = {
-                'varname': info[0],
-                'type': info[1],
-                'low_pc': info[2],
-                'high_pc': info[3],
-                'loc': info[4]
+                "varname": info[0],
+                "type": info[1],
+                "low_pc": info[2],
+                "high_pc": info[3],
+                "loc": info[4],
             }
             fout.write(json.dumps(entry) + "\n")
 

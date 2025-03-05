@@ -14,7 +14,6 @@ args = parser.parse_args()
 
 shards = glob.glob("dataset/*.type_data.jsonl")
 OPT = args.opt
-# out_ds_name = "PurCL/marinda-type-inference-debuginfo-only-%s" % OPT
 out_ds_name = "type-inference-all-%s" % OPT
 
 print("OPT: %s" % OPT)
@@ -121,16 +120,6 @@ ds = Dataset.from_generator(
 # split train/valid/test
 dataset = ds.shuffle(seed=42)
 ret_data_dict = dataset.train_test_split(test_size=0.1, seed=42)
-# train_ds = ret_data_dict["train"]
-# test_ds = ret_data_dict["test"]
-# valid_data_dict = train_ds.train_test_split(test_size=0.15, seed=42)
-# valid_ds = valid_data_dict["test"]
-# train_ds = valid_data_dict["train"]
-# ret_data_dict["train"] = train_ds
-# ret_data_dict["valid"] = valid_ds
-# ret_data_dict["test"] = test_ds
-
-# ds.push_to_hub(out_ds_name, private=True)
 ret_data_dict.push_to_hub(out_ds_name + "-shuffle", private=True)
 
 print()
